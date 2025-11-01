@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import './CertOverlay.css';
 
 function CertOverlay({ cert, onClose }) {
     // Don’t render anything if overlay is closed
