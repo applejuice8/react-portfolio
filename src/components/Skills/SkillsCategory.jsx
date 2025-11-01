@@ -1,9 +1,9 @@
 import SkillItem from "./SkillItem";
 
-function SkillCategory({ title, skills }) {
+function SkillsCategory({ title, skills }) {
     return (
-        <div className='skill-category'>
-            <h3 className='category-title'>{title}</h3>
+        <div className='skills-category'>
+            <h2 className='category-title'>{title}</h2>
             <ul className='skills-list'>
                 {skills.map((skill, index) => (
                     <SkillItem key={index} {...skill} />
@@ -13,4 +13,4 @@ function SkillCategory({ title, skills }) {
     );
 }
 
-export default SkillCategory;
+export default SkillsCategory;
