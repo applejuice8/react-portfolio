@@ -5,7 +5,7 @@ function SkillsSection() {
     return (
         <section id='skills'>
             {Object.entries(skills).map(([title, items]) => (
-                <SkillsCategory key={title} title={title} items={items} />
+                <SkillsCategory key={title} title={title} skills={items} />
             ))}
         </section>
     );
