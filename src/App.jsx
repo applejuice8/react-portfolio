@@ -10,7 +10,18 @@ import Footer from './components/Footer';
 import './App.css';
 
 function App() {
-
+    return (
+		<>
+			<Header />
+			<Home />
+			<About />
+			<EducationSection />
+			<SkillsSection />
+			<ProjectsSection />
+			<CertsSection />
+			<Footer />
+		</>
+	);
 }
 
 export default App;
