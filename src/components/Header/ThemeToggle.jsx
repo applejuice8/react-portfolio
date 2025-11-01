@@ -1,7 +1,7 @@
 function ThemeToggle() {
     return (
-        <button id="theme-toggle" class="pointer">
-            <i class="fas fa-moon"></i>
+        <button id='theme-toggle' className='pointer'>
+            <i className='fas fa-moon'></i>
         </button>
     );
 }
