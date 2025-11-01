@@ -1,4 +1,4 @@
-import EducationCard from './EducationCard';
+import EducationItem from './EducationItem';
 
 function EducationSection() {
     const educationData = [
@@ -27,7 +27,7 @@ function EducationSection() {
             <h2 className='section-title'>Education</h2>
             <div id='education-container'>
                 {educationData.map((ed, index) => (
-                    <EducationCard key={index} {...ed} />
+                    <EducationItem key={index} {...ed} />
                 ))}
             </div>
         </section>

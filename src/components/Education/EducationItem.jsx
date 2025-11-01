@@ -1,4 +1,4 @@
-function EducationCard({ logos, schoolName, degree = false, programme, year }) {
+function EducationItem({ logos, schoolName, degree = false, programme, year }) {
     return (
         <article className='education'>
             <div className='logo-container'>
@@ -17,4 +17,4 @@ function EducationCard({ logos, schoolName, degree = false, programme, year }) {
     );
 }
 
-export default EducationCard;
+export default EducationItem;

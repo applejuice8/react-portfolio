@@ -1,4 +1,4 @@
-function SkillsCard({ name, src }) {
+function SkillItem({ name, src }) {
     return (
         <li className='skill-item'>
             <img src={src} alt={name} className='skill-icon' />
@@ -7,4 +7,4 @@ function SkillsCard({ name, src }) {
     );
 }
 
-export default SkillsCard;
+export default SkillItem;
