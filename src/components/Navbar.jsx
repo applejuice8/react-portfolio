@@ -20,7 +20,7 @@ function Navbar() {
 
             <div id="nav-indicator"></div>
         </nav>
-    )
+    );
 }
 
 export default Navbar;
