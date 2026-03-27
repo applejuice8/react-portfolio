@@ -1,7 +1,7 @@
-function Header() {
+function Navbar() {
     return(
-        <header></header>
+        <nav></nav>
     )
 }
 
-export default Header
+export default Navbar
