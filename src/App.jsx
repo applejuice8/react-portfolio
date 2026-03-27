@@ -1,9 +1,12 @@
+import Layout from './components/Layout'
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
-    </div>
-  );
+    <Layout>
+      <h1>Home</h1>
+      <p>Welcome</p>
+    </Layout>
+  )
 }
 
-export default App;
+export default App
