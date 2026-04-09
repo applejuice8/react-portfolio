@@ -7,6 +7,8 @@ import Skills from './components/Skills/Skills'
 import Projects from './components/Projects/Projects'
 import Certifications from './components/Certifications/Certifications'
 
+import './App.css';
+
 const sections = [About, Education, Skills, Projects, Certifications]
 
 function App() {
