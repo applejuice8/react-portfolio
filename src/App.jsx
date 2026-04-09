@@ -7,11 +7,12 @@ import Skills from './components/Skills/Skills'
 import Projects from './components/Projects/Projects'
 import Certifications from './components/Certifications/Certifications'
 
-const sections = [Home, About, Education, Skills, Projects, Certifications]
+const sections = [About, Education, Skills, Projects, Certifications]
 
 function App() {
   return (
     <Layout>
+      <Home />
       {sections.map((Component) => (
         <Section key={Component.name} id={Component.name.toLowerCase()}>
           <Component />

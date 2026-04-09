@@ -1,6 +1,9 @@
-function SkillItem() {
+function SkillItem({ name, icon }) {
     return(
-        <p></p>
+        <li className="skill-item">
+            <img src={icon} alt={name} className="skill-icon" />
+            <span>{name}</span>
+        </li>
     )
 }
 

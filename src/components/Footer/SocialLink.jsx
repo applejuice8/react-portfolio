@@ -1,6 +1,9 @@
-function SocialLink() {
+function SocialLink({ link, iconClass, name }) {
     return(
-        <p></p>
+        <a href={link} target="_blank" className="social-icon pointer">
+            <i className={iconClass}></i>
+            <span className="tooltip-text">{name}</span>
+        </a>
     )
 }
 
