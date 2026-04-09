@@ -1,6 +1,6 @@
 function Home() {
     return(
-        <div id="home-container">
+        <section id="home-container">
             <div id="home-text">
                 <span id="home-intro">Hello, I am</span>
                 <h1 id="home-name">Colin Leong</h1>
@@ -9,7 +9,7 @@ function Home() {
             <div id="profile-container">
                 <img src="images/profile.jpg" alt="Profile Image" id="profile-image" />
             </div>
-        </div>
+        </section>
     )
 }
 

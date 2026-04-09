@@ -1,4 +1,4 @@
-function CertificationItem({ image, name, issuer, onClick }) {
+function CertItem({ image, name, issuer, onClick }) {
     return(
         <article className="cert pointer" onClick={onClick}>
             <img className="cert-image" src={image} alt={name} />
@@ -10,4 +10,4 @@ function CertificationItem({ image, name, issuer, onClick }) {
     )
 }
 
-export default CertificationItem
+export default CertItem

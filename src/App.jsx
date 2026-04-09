@@ -5,11 +5,11 @@ import About from './components/About'
 import Education from './components/Education/Education'
 import Skills from './components/Skills/Skills'
 import Projects from './components/Projects/Projects'
-import Certifications from './components/Certifications/Certifications'
+import Certs from './components/Certs/Certs'
 
 import './App.css';
 
-const sections = [About, Education, Skills, Projects, Certifications]
+const sections = [About, Education, Skills, Projects, Certs]
 
 function App() {
   return (

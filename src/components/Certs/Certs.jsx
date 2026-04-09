@@ -1,5 +1,5 @@
-import { useState } from "react";
-import CertificationItem from './CertificationItem'
+import { useState } from 'react';
+import CertItem from './CertItem'
 
 const certData = [
     {
@@ -14,7 +14,7 @@ const certData = [
     },
 ]
 
-function Certifications() {
+function Certs() {
     const [overlay, setOverlay] = useState(null)
 
     function openOverlay(cert) {
@@ -31,7 +31,7 @@ function Certifications() {
         <>
             <div id="certs-container">
                 {certData.map((item, index) => (
-                    <CertificationItem key={index} onClick={() => openOverlay(item)} {...item} />
+                    <CertItem key={index} onClick={() => openOverlay(item)} {...item} />
                 ))}
             </div>
 
@@ -51,4 +51,4 @@ function Certifications() {
     )
 }
 
-export default Certifications
+export default Certs
