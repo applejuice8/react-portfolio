@@ -1,18 +1,6 @@
 import { useState } from 'react';
 import CertItem from './CertItem'
-
-const certData = [
-    {
-        image: 'images/certs/CS50x.png',
-        name: 'CS50x: Introduction to Computer Science',
-        issuer: 'Harvard University'
-    },
-    {
-        image: 'images/certs/CS50AI.png',
-        name: 'CS50AI: Introduction to Artificial Intelligence with Python',
-        issuer: 'Harvard University'
-    },
-]
+import certData from '../../data/certsData';
 
 function Certs() {
     const [overlay, setOverlay] = useState(null)

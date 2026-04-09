@@ -1,4 +1,4 @@
-function EducationItem({ logo, name, degree, year }) {
+function EducationItem({ name, degree, year, logo }) {
     return (
         <article className="education">
             <div className="logo-container">

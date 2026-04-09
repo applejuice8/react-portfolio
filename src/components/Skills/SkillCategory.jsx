@@ -14,7 +14,7 @@ function SkillCategory({ title, iconClass, skills }) {
                 ))}
             </ul>
         </div>
-    );
+    )
 }
 
 export default SkillCategory

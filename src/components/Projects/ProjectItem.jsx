@@ -1,4 +1,4 @@
-function ProjectItem({ image, name, description, tags, link }) {
+function ProjectItem({ name, description, tags, image, link }) {
     return(
         <article className="project">
             <div className="project-image-container">

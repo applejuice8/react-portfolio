@@ -1,4 +1,4 @@
-function CertItem({ image, name, issuer, onClick }) {
+function CertItem({ name, issuer, image, onClick }) {
     return(
         <article className="cert pointer" onClick={onClick}>
             <img className="cert-image" src={image} alt={name} />
