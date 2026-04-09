@@ -1,6 +1,6 @@
-function CertificationItem({ image, name, issuer }) {
+function CertificationItem({ image, name, issuer, onClick }) {
     return(
-        <article className="cert pointer">
+        <article className="cert pointer" onClick={onClick}>
             <img className="cert-image" src={image} alt={name} />
             <div className="cert-details">
                 <h3 className="cert-name">{name}</h3>

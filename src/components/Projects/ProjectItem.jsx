@@ -9,7 +9,7 @@ function ProjectItem({ image, name, description, tags, link }) {
                 <p className="project-description">{description}</p>
                 <div className="project-tags">
                     {tags.map((item, index) => (
-                        <span className="tag" key={index} {...item} />
+                        <span className="tag" key={index}>{item}</span>
                     ))}
                 </div>
 
