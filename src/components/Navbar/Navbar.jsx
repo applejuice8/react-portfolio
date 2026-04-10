@@ -2,9 +2,9 @@ import { useState, useEffect, useRef } from 'react';
 
 import './Navbar.css'
 
-function Navbar() {
-    const navLinks = ['home', 'about', 'education', 'skills', 'projects', 'certs']
+const navLinks = ['home', 'about', 'education', 'skills', 'projects', 'certs']
 
+function Navbar() {
     const [isExpanded, setIsExpanded] = useState(false)
     const [isLight, setIsLight] = useState(false)
     const [indicator, setIndicator] = useState('home')
@@ -15,35 +15,43 @@ function Navbar() {
         setIsLight(!isLight)
     }
 
-    useEffect(() => {
-        function handleScroll() {
-            const scrollY = window.scrollY
-            let activeSection
+    function handleScroll() {
+        const scrollY = window.scrollY
+        let activeSection
 
-            document.querySelectorAll('section').forEach(section => {
-                const offsetTop = section.offsetTop - 150
-                const offsetBot = offsetTop + section.offsetHeight
+        // Check which section in view
+        const sections = document.querySelectorAll('section')
+        for (const section of sections) {
+            const offsetTop = section.offsetTop - 150
+            const offsetBot = offsetTop + section.offsetHeight
 
-                // If in range
-                if (scrollY >= offsetTop && scrollY < offsetBot)
-                    activeSection = section.getAttribute('id')
-            })
-            if (activeSection) setIndicator(activeSection)
+            if (scrollY >= offsetTop && scrollY < offsetBot) {
+                activeSection = section.getAttribute('id')
+                break
+            }
         }
+        // Set indicator if active section changed
+        if (activeSection) {
+            setIndicator(prev =>
+                (prev === activeSection) ? prev : activeSection
+            )
+        }
+    }
 
+    // Add, remove scroll listener
+    useEffect(() => {
         window.addEventListener('scroll', handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)  // Cleanup
     }, [])
 
-    function updateIndicator(activeSection) {
-        const activeElement = document.querySelector(`.nav-link[href="#${activeSection}"]`)
+    // Update indicator every time hook change
+    useEffect(() => {
+        const activeElement = document.querySelector(`.nav-link[href="#${indicator}"]`)
         if (!activeElement || !indicatorRef.current) return
+
+        // Change size, location depending on active section
         indicatorRef.current.style.width = `${activeElement.getBoundingClientRect().width}px`
         indicatorRef.current.style.left = `${activeElement.offsetLeft + 24}px`
-    }
-
-    useEffect(() => {
-        updateIndicator(indicator)
     }, [indicator])
 
     return(
