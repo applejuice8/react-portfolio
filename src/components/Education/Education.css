@@ -23,7 +23,7 @@
 }
 
 .logo-container {
-    width: 220px;
+    width: 250px;
     background-color: var(--bg-accent);
     display: flex;
     flex-direction: column;
@@ -41,13 +41,14 @@
 }
 
 .logo-container img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 180px;
 }
 
 .education-details {
     margin-top: auto;
     margin-bottom: auto;
-    padding: 25px;
+    padding: 25px 50px;
     flex: 1;
 }
 
@@ -61,8 +62,13 @@
 .programme {
     font-size: 1.1rem;
     color: var(--text-secondary);
-    margin-bottom: 10px;
     font-weight: 500;
+}
+
+.grade {
+    color: var(--highlight);
+    margin-bottom: 15px;
+    font-size: 1.1rem;
 }
 
 .year {
@@ -74,35 +80,6 @@
     border-radius: 20px;
     font-size: 0.9rem;
 }
-
-/* Education Section - Dual Degree Tooltip */
-/* #degree-tooltip {
-    cursor: help;
-    position: relative;
-    color: var(--text-accent);
-}
-
-#degree-tooltip #degree-tooltip-text {
-    visibility: hidden;
-    width: 600px;
-    background-color: var(--bg-accent);
-    color: var(--text-primary);
-    text-align: center;
-    border-radius: 6px;
-    padding: 20px;
-    position: absolute;
-    bottom: 125%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
-}
-
-#degree-tooltip:hover #degree-tooltip-text {
-    visibility: visible;
-    opacity: 1;
-} */
 
 /* Mobile (Left, right -> Top, bot) */
 @media (max-width: 768px) {
@@ -120,10 +97,4 @@
         max-width: 220px;
         width: auto;
     }
-    
-    /* #degree-tooltip #degree-tooltip-text {
-        width: 70vw;
-        left: -30px;
-        transform: none;
-    } */
 }

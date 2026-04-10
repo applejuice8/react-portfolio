@@ -19,7 +19,6 @@ const skillsData = [
             { name: 'FastAPI', icon: 'fastapi.svg' },
             { name: 'Flask', icon: 'flask.svg' },
             { name: 'SQLAlchemy', icon: 'sqlalchemy.png' },
-            { name: 'Oracle Apex', icon: 'oracle-apex.svg' },
         ],
     },
     {

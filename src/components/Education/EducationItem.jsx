@@ -1,4 +1,4 @@
-function EducationItem({ name, degree, year, logos }) {
+function EducationItem({ name, programme, grade, year, logos }) {
     return (
         <article className="education">
             <div className="logo-container">
@@ -9,7 +9,8 @@ function EducationItem({ name, degree, year, logos }) {
 
             <div className="education-details">
                 <h3 className="school-name">{name}</h3>
-                <p className="programme">{degree}</p>
+                <p className="programme">{programme}</p>
+                <p className="grade">{grade}</p>
                 <p className="year">{year}</p>
             </div>
         </article>
