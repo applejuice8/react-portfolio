@@ -1,8 +1,10 @@
-function EducationItem({ name, degree, year, logo }) {
+function EducationItem({ name, degree, year, logos }) {
     return (
         <article className="education">
             <div className="logo-container">
-                <img src={`/images/education/${logo}`} alt={name} className="school-logo" />
+                {logos.map((item, index) => (
+                    <img key={index} src={`/images/education/${item.logo}`} alt={item.name} className="school-logo" />
+                ))}
             </div>
 
             <div className="education-details">
