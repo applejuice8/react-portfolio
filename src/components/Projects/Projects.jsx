@@ -1,6 +1,8 @@
 import ProjectItem from './ProjectItem'
 import projectsData from '../../data/projectsData'
 
+import './Projects.css'
+
 function Projects() {
     return(
         <div id="projects-container">

@@ -2,6 +2,8 @@ import { useState } from 'react';
 import CertItem from './CertItem'
 import certData from '../../data/certsData';
 
+import './Certs.css'
+
 function Certs() {
     const [overlay, setOverlay] = useState(null)
 

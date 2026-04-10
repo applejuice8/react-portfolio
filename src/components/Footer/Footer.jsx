@@ -1,6 +1,8 @@
 import SocialLink from './SocialLink'
 import socialData from '../../data/socialData'
 
+import './Footer.css'
+
 function Footer() {
     return(
         <footer>
@@ -11,7 +13,7 @@ function Footer() {
             </div>
 
             <span id="copyright">
-                &copy; 2025 Colin Leong. All rights reserved.
+                &copy; 2026 Colin Leong. All rights reserved.
             </span>
         </footer>
     )

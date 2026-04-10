@@ -1,0 +1,129 @@
+#education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.education {
+    background-color: var(--bg-secondary);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+    width: 100%;
+}
+
+.education:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--highlight);
+
+}
+
+.logo-container {
+    width: 220px;
+    background-color: var(--bg-accent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+    gap: 35px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.education:hover .logo-container {
+    background-color: var(--border-color);
+}
+
+.logo-container img {
+    width: 100%;
+}
+
+.education-details {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 25px;
+    flex: 1;
+}
+
+.school-name {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.programme {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.year {
+    color: var(--text-secondary);
+    font-style: italic;
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: var(--bg-accent);
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Education Section - Dual Degree Tooltip */
+/* #degree-tooltip {
+    cursor: help;
+    position: relative;
+    color: var(--text-accent);
+}
+
+#degree-tooltip #degree-tooltip-text {
+    visibility: hidden;
+    width: 600px;
+    background-color: var(--bg-accent);
+    color: var(--text-primary);
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+#degree-tooltip:hover #degree-tooltip-text {
+    visibility: visible;
+    opacity: 1;
+} */
+
+/* Mobile (Left, right -> Top, bot) */
+@media (max-width: 768px) {
+    .education {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo-container {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .logo-container img {
+        max-width: 220px;
+        width: auto;
+    }
+    
+    /* #degree-tooltip #degree-tooltip-text {
+        width: 70vw;
+        left: -30px;
+        transform: none;
+    } */
+}

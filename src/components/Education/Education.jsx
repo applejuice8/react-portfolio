@@ -1,6 +1,8 @@
 import EducationItem from './EducationItem'
 import educationData from '../../data/educationData'
 
+import './Education.css'
+
 function Education() {
     return(
         <div id="education-container">

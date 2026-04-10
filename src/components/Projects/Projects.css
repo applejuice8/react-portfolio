@@ -1,0 +1,120 @@
+#projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.project {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: var(--bg-secondary);
+}
+
+.project:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project-image-container {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.project-image-container:hover  {
+    outline: 3px solid var(--highlight);
+    outline-offset: 10px;
+    transform: scale(1.05);
+    border-radius: 200px;
+}
+
+.project-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.project-title {
+    color: var(--highlight);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.project-description {
+    margin-bottom: 20px;
+    color: var(--text-secondary);
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tag {
+    background-color: var(--bg-accent);
+    color: var(--text-accent);
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.project-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+    color: var(--highlight);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+    border: 1px solid var(--highlight);
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.project-link:hover {
+    color: var(--text-accent);
+    background-color: rgba(83, 155, 245, 0.1);
+}
+
+/* Responsive (Left, right -> Top, bot) */
+@media (max-width: 900px) {
+    .project {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .project:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .project-tags {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .project-image-container {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .project-link {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

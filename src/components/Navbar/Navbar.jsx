@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 
+import './Navbar.css'
+
 function Navbar() {
     const navLinks = ['home', 'about', 'education', 'skills', 'projects', 'certs']
 

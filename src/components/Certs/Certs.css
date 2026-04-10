@@ -1,0 +1,118 @@
+#certs {
+    max-width: 1400px;
+}
+
+#certs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.cert {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 350px;
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.cert:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 26px var(--highlight);
+}
+
+.cert-image {
+    border-radius: 8px;
+    height: 250px;
+    width: auto;
+}
+
+.cert-details {
+    padding: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.cert-name {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: var(--text-primary);
+}
+
+.cert-issuer {
+    font-size: 0.9rem;
+    color: var(--text-accent);
+    font-family: 'Merienda', cursive;
+}
+
+/* Fullscreen overlay */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+#overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#close-btn {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 2.5rem;
+    color: #adbac7;
+    background: none;
+    border: none;
+    transition: color 0.3s ease;
+    z-index: 100;
+}
+
+#close-btn:hover {
+    color: #539bf5;
+}
+
+#overlay-cert {
+    position: relative;
+    max-width: 100%;
+    max-height: 90%;
+    text-align: center;
+}
+
+#overlay-image {
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: 8px;
+}
+
+#overlay-details {
+    margin-top: 20px;
+}
+
+#overlay-name {
+    font-size: 1.5rem;
+    color: #adbac7;
+    margin-bottom: 5px;
+}
+
+#overlay-issuer {
+    font-size: 1.1rem;
+    color: #6cb6ff;
+    font-family: 'Merienda', cursive;
+}
