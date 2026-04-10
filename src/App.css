@@ -16,15 +16,15 @@
 
 /* Light theme */
 .light-mode {
-    --bg-primary: #f0f5ff;
-    --bg-secondary: #ffffff;
-    --bg-accent: #e6edff;
-    --text-primary: #1a1a2e;
-    --text-secondary: #4a4a6a;
-    --text-accent: #2563eb;
-    --border-color: #d1d5db;
-    --highlight: #3b82f6;
-    --nav-indicator: rgba(59, 130, 246, 0.2);
+    --bg-primary: #c9d8e8;
+    --bg-secondary: #d6e4f0;
+    --bg-accent: #bfcfdf;
+    --text-primary: #1a2535;
+    --text-secondary: #3a4f6a;
+    --text-accent: #1d4ed8;
+    --border-color: #93aec7;
+    --highlight: #2563eb;
+    --nav-indicator: rgba(37, 99, 235, 0.25);
 }
 
 /* General */

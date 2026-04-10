@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { useTheme } from '../../context/ThemeContext';
 
 import './Navbar.css'
 
@@ -6,14 +7,10 @@ const navLinks = ['home', 'about', 'education', 'skills', 'projects', 'certs']
 
 function Navbar() {
     const [isExpanded, setIsExpanded] = useState(false)
-    const [isLight, setIsLight] = useState(false)
     const [indicator, setIndicator] = useState('home')
     const indicatorRef = useRef(null)
 
-    function toggleTheme() {
-        document.documentElement.classList.toggle('light-mode')
-        setIsLight(!isLight)
-    }
+    const { isLight, toggleTheme } = useTheme()
 
     function handleScroll() {
         const scrollY = window.scrollY

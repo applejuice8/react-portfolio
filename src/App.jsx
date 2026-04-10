@@ -1,3 +1,4 @@
+import { ThemeProvider } from './context/ThemeContext'
 import Layout from './components/Layout'
 import Section from './components/Section/Section'
 import Home from './components/Home/Home'
@@ -13,14 +14,16 @@ const sections = [About, Education, Skills, Projects, Certs]
 
 function App() {
   return (
-    <Layout>
-      <Home />
-      {sections.map((Component) => (
-        <Section key={Component.name} id={Component.name.toLowerCase()}>
-          <Component />
-        </Section>
-      ))}
-    </Layout>
+    <ThemeProvider>
+      <Layout>
+        <Home />
+        {sections.map((Component) => (
+          <Section key={Component.name} id={Component.name.toLowerCase()}>
+            <Component />
+          </Section>
+        ))}
+      </Layout>
+    </ThemeProvider>
   )
 }
 

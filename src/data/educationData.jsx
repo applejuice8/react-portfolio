@@ -7,11 +7,13 @@ const educationData = [
         logos: [
             {
                 name: 'Sunway University',
-                logo: 'sunway-university-dark.png',
+                light: 'sunway-university-light.png',
+                dark: 'sunway-university-dark.png',
             },
             {
                 name: 'Lancaster University',
-                logo: 'lancaster-university-dark.png',
+                light: 'lancaster-university-light.png',
+                dark: 'lancaster-university-dark.png',
             }
         ]
     },
@@ -23,7 +25,8 @@ const educationData = [
         logos: [
             {
                 name: 'Sunway College',
-                logo: 'sunway-college-dark.png'
+                light: 'sunway-college-light.png',
+                dark: 'sunway-college-dark.png'
             }
         ]
     },
@@ -35,7 +38,8 @@ const educationData = [
         logos: [
             {
                 name: 'Catholic High School, PJ (SMJK Katholik)',
-                logo: 'catholic-high-school.png'
+                light: 'catholic-high-school.png',
+                dark: 'catholic-high-school.png'
             }
         ]
     }
