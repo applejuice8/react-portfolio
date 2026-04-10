@@ -15,9 +15,9 @@ const skillsData = [
         iconClass: 'fas fa-server',
         skills: [
             { name: 'Python', icon: '/images/skills/python.svg' },
-            { name: 'Flask', icon: '/images/skills/flask.svg' },
+            { name: 'Django', icon: '/images/skills/django.svg' },
             { name: 'FastAPI', icon: '/images/skills/fastapi.svg' },
-            { name: 'SQL', icon: '/images/skills/sql.svg' },
+            { name: 'Flask', icon: '/images/skills/flask.svg' },
             { name: 'SQLAlchemy', icon: '/images/skills/sqlalchemy.png' },
             { name: 'Oracle Apex', icon: '/images/skills/oracle-apex.svg' },
         ],
@@ -27,7 +27,6 @@ const skillsData = [
         iconClass: 'fas fa-robot',
         skills: [
             { name: 'PyTorch', icon: '/images/skills/pytorch.svg' },
-            { name: 'TensorFlow', icon: '/images/skills/tensorflow.svg' },
             { name: 'Scikit-learn', icon: '/images/skills/scikit-learn.svg' },
             { name: 'Pandas', icon: '/images/skills/pandas.svg' },
             { name: 'Jupyter', icon: '/images/skills/jupyter.svg' },
