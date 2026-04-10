@@ -9,7 +9,7 @@ function Home() {
                 <span id="home-role">Software Engineer</span>
             </div>
             <div id="profile-container">
-                <img src="images/profile.jpg" alt="Profile Image" id="profile-image" />
+                <img src="/images/profile.jpg" alt="Profile Image" id="profile-image" />
             </div>
         </section>
     )

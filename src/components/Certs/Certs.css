@@ -1,3 +1,6 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
 #certs {
     max-width: 1400px;
 }

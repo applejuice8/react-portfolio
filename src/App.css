@@ -1,8 +1,7 @@
-/* Import Fonts */
+/* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 
-/* Dark Colour Theme */
+/* Dark theme */
 :root {
     --bg-primary: #22272e;
     --bg-secondary: #2d333b;
@@ -15,7 +14,7 @@
     --nav-indicator: rgba(108, 182, 255, 0.3);
 }
 
-/* Light Colour Theme */
+/* Light theme */
 .light-mode {
     --bg-primary: #f0f5ff;
     --bg-secondary: #ffffff;
@@ -41,14 +40,14 @@ html {
 }
 
 body {
-    cursor: url('../images/cursor.png'), auto;
+    cursor: url('/images/cursor.png'), auto;
     background: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.6;
 }
 
 .pointer {
-    cursor: url('../images/pointer.png'), auto;
+    cursor: url('/images/pointer.png'), auto;
 }
 
 .highlight {
@@ -68,8 +67,3 @@ body::-webkit-scrollbar-thumb {
     border-radius: 6px;
     border: 2px solid var(--bg-secondary);
 }
-
-
-
-
-
