@@ -2,7 +2,7 @@ function EducationItem({ name, degree, year, logo }) {
     return (
         <article className="education">
             <div className="logo-container">
-                <img src={logo} alt={name} className="school-logo" />
+                <img src={`/images/education/${logo}`} alt={name} className="school-logo" />
             </div>
 
             <div className="education-details">

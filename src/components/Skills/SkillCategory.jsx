@@ -4,7 +4,7 @@ function SkillCategory({ title, iconClass, skills }) {
     return (
         <div className="skills-category">
             <h3 className="category-title">
-                <i className={iconClass} title={title}></i>
+                <i className={`fas fa-${iconClass}`} title={title}></i>
                 {title}
             </h3>
 

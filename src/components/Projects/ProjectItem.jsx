@@ -2,7 +2,7 @@ function ProjectItem({ name, description, tags, image, link }) {
     return(
         <article className="project">
             <div className="project-image-container">
-                <img src={image} alt={name} className="project-image" />
+                <img src={`/images/projects/${image}`} alt={name} className="project-image" />
             </div>
             <div className="project-content">
                 <h3 className="project-title">{name}</h3>

@@ -1,7 +1,7 @@
 function SkillItem({ name, icon }) {
     return(
         <li className="skill-item">
-            <img src={icon} alt={name} className="skill-icon" />
+            <img src={`/images/skills/${icon}`} alt={name} className="skill-icon" />
             <span>{name}</span>
         </li>
     )
