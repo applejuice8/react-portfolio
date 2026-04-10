@@ -170,7 +170,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Sections */
-section:not(#home-container) {
+section:not(.home-container) {
     min-height: 100vh;
     padding: 100px 40px 40px;
     display: flex;
@@ -208,7 +208,7 @@ section:not(#home-container) {
     padding: 0;
 }
 
-#home-container {
+.home-container {
     max-width: 1200px;
     min-height: 80vh;
     margin: 20px auto 0;
@@ -825,7 +825,7 @@ footer {
 
 /* Responsive */
 @media (max-width: 900px) {
-    #home-container {
+    .home-container {
         gap: 1vw;
     }
 
@@ -927,7 +927,7 @@ footer {
     }
 
     /* Home Section */
-    #home-container {
+    .home-container {
         flex-direction: column-reverse;
         text-align: center;
         padding: 1rem;
