@@ -119,3 +119,8 @@
     color: #6cb6ff;
     font-family: 'Merienda', cursive;
 }
+
+/* View all button */
+.view-all-btn {
+    margin-top: 5vh;
+}

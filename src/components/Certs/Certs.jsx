@@ -1,42 +1,29 @@
-import { useState } from 'react';
+import { useNavigate } from 'react-router-dom'
+import useOverlay from '../../hooks/useOverlay';
 import CertItem from './CertItem'
+import CertOverlay from './CertOverlay';
 import certData from '../../data/certsData';
 
 import './Certs.css'
 
 function Certs() {
-    const [overlay, setOverlay] = useState(null)
-
-    function openOverlay(cert) {
-        setOverlay(cert)
-        document.body.style.overflow = 'hidden'
-    }
-
-    function closeOverlay() {
-        setOverlay(null)
-        document.body.style.overflow = 'auto'
-    }
+    const navigate = useNavigate()
+    const { overlay, openOverlay, closeOverlay } = useOverlay()
+    const featured = certData.filter(c => c.featured)
 
     return(
         <>
             <div id="certs-container">
-                {certData.map((item, index) => (
+                {featured.map((item, index) => (
                     <CertItem key={index} onClick={() => openOverlay(item)} {...item} />
                 ))}
             </div>
 
-            {overlay && (
-                <div id="overlay" className={overlay ? 'active' : ''}>
-                    <button id="close-btn" onClick={closeOverlay} className="pointer">&times;</button>
-                    <div id="overlay-cert">
-                        <img id="overlay-image" src={`/images/certs/${overlay.image}`} alt={overlay.name} />
-                        <div id="overlay-details">
-                            <h2 id="overlay-name">{overlay.name}</h2>
-                            <p id="overlay-issuer">{overlay.issuer}</p>
-                        </div>
-                    </div>
-                </div>
-            )}
+            <a className="view-all-btn project-link pointer" onClick={() => navigate('/certs')}>
+                View All Certificates
+            </a>
+
+            <CertOverlay overlay={overlay} closeOverlay={closeOverlay} />
         </>
     )
 }
