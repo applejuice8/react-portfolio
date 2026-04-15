@@ -7,10 +7,11 @@ import NiceButton from '../NiceButton/NiceButton';
 
 import './Certs.css'
 
+const featured = certData.filter(c => c.featured)
+
 function Certs() {
     const navigate = useNavigate()
     const { overlay, openOverlay, closeOverlay } = useOverlay()
-    const featured = certData.filter(c => c.featured)
 
     return(
         <>

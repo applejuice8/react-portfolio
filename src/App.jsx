@@ -9,6 +9,7 @@ import Skills from './components/Skills/Skills'
 import Projects from './components/Projects/Projects'
 import Certs from './components/Certs/Certs'
 import AllCerts from './pages/AllCerts/AllCerts'
+import AllProjects from './pages/AllProjects/AllProjects'
 
 import './App.css';
 
@@ -28,16 +29,17 @@ function MainPage() {
 }
 
 function App() {
-  return (
-    <ThemeProvider>
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<MainPage />} />
-                <Route path="/certs" element={<AllCerts />} />
-            </Routes>
-        </BrowserRouter>
-    </ThemeProvider>
-  )
+    return (
+        <ThemeProvider>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<MainPage />} />
+                    <Route path="/certs" element={<AllCerts />} />
+                    <Route path="/projects" element={<AllProjects />} />
+                </Routes>
+            </BrowserRouter>
+        </ThemeProvider>
+    )
 }
 
 export default App
