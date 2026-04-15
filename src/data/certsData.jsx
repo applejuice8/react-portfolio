@@ -12,9 +12,27 @@ const certData = [
         featured: true,
     },
     {
+        name: 'Build with AI 2026 x IWD Gemini CLI Hackathon ONLINE',
+        issuer: 'GDG Ahlen',
+        image: 'build-with-ai-2026.png',
+        featured: true,
+    },
+    {
         name: 'KitaHack 2026',
         issuer: 'GDGoC Malaysia',
         image: 'kitahack-2026.png',
+        featured: false,
+    },
+    {
+        name: 'DodgeBots Competition 2025',
+        issuer: 'Sunway Robotics Club',
+        image: 'dodgebots-competition-2025.png',
+        featured: false,
+    },
+    {
+        name: 'Cursor x Anthropic Hackathon Volunteer',
+        issuer: 'AI Hackerdorm',
+        image: 'cursor-x-anthropic-hackathon.png',
         featured: false,
     },
     {
