@@ -71,26 +71,6 @@
     font-weight: 500;
 }
 
-.project-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    gap: 10px;
-    color: var(--highlight);
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.2s ease;
-    border: 1px solid var(--highlight);
-    padding: 8px 16px;
-    border-radius: 5px;
-}
-
-.project-link:hover {
-    color: var(--text-accent);
-    background-color: rgba(83, 155, 245, 0.1);
-}
-
 /* Responsive (Left, right -> Top, bot) */
 @media (max-width: 900px) {
     .project {
@@ -111,10 +91,5 @@
     .project-image-container {
         width: 100%;
         max-width: 500px;
-    }
-
-    .project-link {
-        margin-left: auto;
-        margin-right: auto;
     }
 }

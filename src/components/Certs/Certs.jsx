@@ -3,6 +3,7 @@ import useOverlay from '../../hooks/useOverlay';
 import CertItem from './CertItem'
 import CertOverlay from './CertOverlay';
 import certData from '../../data/certsData';
+import NiceButton from '../NiceButton/NiceButton';
 
 import './Certs.css'
 
@@ -19,9 +20,9 @@ function Certs() {
                 ))}
             </div>
 
-            <a className="view-all-btn project-link pointer" onClick={() => navigate('/certs')}>
+            <NiceButton isCenter={true} onClick={() => navigate('/certs')}>
                 View All Certificates
-            </a>
+            </NiceButton>
 
             <CertOverlay overlay={overlay} closeOverlay={closeOverlay} />
         </>

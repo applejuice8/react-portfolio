@@ -10,6 +10,7 @@
     flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
+    margin-bottom: 3vh;
 }
 
 .cert {
@@ -118,9 +119,4 @@
     font-size: 1.1rem;
     color: #6cb6ff;
     font-family: 'Merienda', cursive;
-}
-
-/* View all button */
-.view-all-btn {
-    margin-top: 5vh;
 }

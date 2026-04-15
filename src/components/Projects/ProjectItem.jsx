@@ -1,3 +1,5 @@
+import NiceButton from "../NiceButton/NiceButton"
+
 function ProjectItem({ name, description, tags, image, link }) {
     return(
         <article className="project">
@@ -13,11 +15,11 @@ function ProjectItem({ name, description, tags, image, link }) {
                     ))}
                 </div>
 
-                <a href={link} target="_blank" className="project-link pointer">
+                <NiceButton link={link} isCenter={false}>
                     <i className="fa-brands fa-github"></i>
                     Source Code
                     <i className="fa-solid fa-up-right-from-square"></i>
-                </a>
+                </NiceButton>
             </div>
         </article>
     )
