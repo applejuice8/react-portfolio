@@ -20,9 +20,7 @@ function Certs() {
                 ))}
             </div>
 
-            <NiceButton isCenter={true} onClick={() => navigate('/certs')}>
-                View All Certificates
-            </NiceButton>
+            <NiceButton text="View All Certificates" isCenter={true} onClick={() => navigate('/certs')} />
 
             <CertOverlay overlay={overlay} closeOverlay={closeOverlay} />
         </>
