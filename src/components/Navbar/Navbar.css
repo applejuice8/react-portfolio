@@ -13,28 +13,6 @@
     box-shadow: 0 1px 20px var(--highlight);
 }
 
-#logo {
-    font-family: 'Jua';
-    font-weight: bold;
-    margin-right: 1.5rem;
-    color: var(--highlight);
-    font-size: 1.2rem;
-}
-
-#hamburger {
-    display: none;
-    padding: 0.5rem;
-}
-
-#hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background: var(--text-primary);
-    margin: 5px 0;
-    transition: all 0.3s ease;
-}
-
 #nav-links {
     list-style: none;
     display: flex;
@@ -60,68 +38,11 @@
     color: var(--highlight);
 }
 
-/* Nav indicator */
-#nav-indicator {
-    position: absolute;
-    height: 35px;
-    background: var(--nav-indicator);
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    max-width: 100px;
-}
-
-/* Toggle theme */
-#theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 2%;
-    border: 2px solid var(--border-color);
-    background: var(--bg-secondary);
-    color: var(--text-primary);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 100;
-    transition: all 0.3s ease;
-}
-
-#theme-toggle:hover {
-    background: var(--bg-accent);
-    color: var(--highlight);
-}
-
-#theme-toggle i {
-    font-size: 30px;
-}
-
 /* Mobile (Top navbar -> Collapsible hamburger) */
 @media (max-width: 768px) {
     #navbar {
         flex-direction: row;
         padding: 0.2rem 1.2rem;
-    }
-    
-    #logo {
-        margin-right: 0;
-    }
-    
-    #hamburger {
-        display: block;
-    }
-
-    /* Hamburger icon animation */
-    #hamburger.active span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-    #hamburger.active span:nth-child(2) {
-        opacity: 0;
-    }
-    #hamburger.active span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
     }
     
     #nav-links {
@@ -163,10 +84,5 @@
         display: block;
         width: 70vw;
         text-align: center;
-    }
-    
-    /* Nav indicator */
-    #nav-indicator {
-        display: none;
     }
 }

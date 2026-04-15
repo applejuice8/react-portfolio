@@ -4,7 +4,6 @@ import projectsData from '../../data/projectsData'
 import NiceButton from '../NiceButton/NiceButton'
 
 import './Projects.css'
-import { use } from 'react'
 
 const featured = projectsData.filter(p => p.featured)
 
