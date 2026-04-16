@@ -14,7 +14,13 @@ import AllCerts from './pages/AllCerts'
 import AllProjects from './pages/AllProjects'
 import './App.css'
 
-const sections = [About, Education, Skills, Projects, Certs]
+const sections = [
+    { Component: About, id: 'about' },
+    { Component: Education, id: 'education' },
+    { Component: Skills, id: 'skills' },
+    { Component: Projects, id: 'projects' },
+    { Component: Certs, id: 'certs' },
+]
 
 function MainPage() {
     const { state } = useLocation()
@@ -29,8 +35,8 @@ function MainPage() {
     return (
         <Layout>
             <Home />
-            {sections.map((Component) => (
-                <Section key={Component.name} id={Component.name.toLowerCase()}>
+            {sections.map(({ Component, id }) => (
+                <Section key={id} id={id}>
                     <Component />
                 </Section>
             ))}
