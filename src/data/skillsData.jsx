@@ -14,7 +14,6 @@ const skillsData = [
         title: 'Backend & Database',
         iconClass: 'server',
         skills: [
-            { name: 'Python', icon: 'python.svg' },
             { name: 'Django', icon: 'django.svg' },
             { name: 'FastAPI', icon: 'fastapi.svg' },
             { name: 'Flask', icon: 'flask.svg' },
@@ -35,6 +34,7 @@ const skillsData = [
         title: 'Web Scraping & Automation',
         iconClass: 'spider',
         skills: [
+            { name: 'Python', icon: 'python.svg' },
             { name: 'Selenium', icon: 'selenium.svg' },
             { name: 'Playwright', icon: 'playwright.svg' },
             { name: 'Beautiful Soup', icon: 'beautiful-soup.png' },

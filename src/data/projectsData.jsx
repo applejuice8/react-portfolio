@@ -21,7 +21,7 @@ const projectsData = [
         tags: ['Python', 'Flask', 'Bootstrap', 'Selenium', 'Playwright', 'Beautiful Soup', 'REST API', 'Web Scraping'],
         image: 'ebay-scraper.png',
         link: 'https://github.com/applejuice8/ebay-scraper',
-        featured: true,
+        featured: false,
     },
     {
         name: 'ShopApp',
