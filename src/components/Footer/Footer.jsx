@@ -1,6 +1,5 @@
 import SocialLink from './SocialLink'
 import socialData from '../../data/socialData'
-
 import './Footer.css'
 
 function Footer() {

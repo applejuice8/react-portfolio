@@ -2,7 +2,6 @@ import { useNavigate } from 'react-router-dom'
 import ProjectItem from './ProjectItem'
 import projectsData from '../../data/projectsData'
 import NiceButton from '../NiceButton/NiceButton'
-
 import './Projects.css'
 
 const featured = projectsData.filter(p => p.featured)

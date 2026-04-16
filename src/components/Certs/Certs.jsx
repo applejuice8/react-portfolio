@@ -1,10 +1,9 @@
 import { useNavigate } from 'react-router-dom'
-import useOverlay from '../../hooks/useOverlay';
+import useOverlay from '../../hooks/useOverlay'
 import CertItem from './CertItem'
-import CertOverlay from './CertOverlay';
-import certData from '../../data/certsData';
-import NiceButton from '../NiceButton/NiceButton';
-
+import CertOverlay from './CertOverlay'
+import certData from '../../data/certsData'
+import NiceButton from '../NiceButton/NiceButton'
 import './Certs.css'
 
 const featured = certData.filter(c => c.featured)

@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import { useEffect } from 'react'
 import { useLocation, BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from './context/ThemeContext'
@@ -11,8 +12,7 @@ import Projects from './components/Projects/Projects'
 import Certs from './components/Certs/Certs'
 import AllCerts from './pages/AllCerts'
 import AllProjects from './pages/AllProjects'
-
-import './App.css';
+import './App.css'
 
 const sections = [About, Education, Skills, Projects, Certs]
 
@@ -60,6 +60,7 @@ function App() {
                     <Route path="/certs" element={<AllCerts />} />
                     <Route path="/projects" element={<AllProjects />} />
                 </Routes>
+            <Analytics />
             </BrowserRouter>
         </ThemeProvider>
     )

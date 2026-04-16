@@ -1,4 +1,4 @@
-import NiceButton from "../NiceButton/NiceButton"
+import NiceButton from '../NiceButton/NiceButton'
 
 function ProjectItem({ name, description, tags, image, link }) {
     return(

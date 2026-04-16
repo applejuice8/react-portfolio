@@ -1,6 +1,5 @@
 import SkillCategory from './SkillCategory'
 import skillsData from '../../data/skillsData'
-
 import './Skills.css'
 
 function Skills() {

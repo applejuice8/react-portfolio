@@ -1,4 +1,4 @@
-import { useTheme } from '../../context/ThemeContext';
+import { useTheme } from '../../context/ThemeContext'
 
 function EducationItem({ name, programme, grade, year, logos }) {
     const { isLight } = useTheme()
