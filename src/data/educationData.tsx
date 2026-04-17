@@ -1,4 +1,18 @@
-const educationData = [
+interface Logo {
+    name: string
+    light: string
+    dark: string
+}
+
+interface Education {
+    name: string
+    programme: string
+    grade: string
+    year: string
+    logos: Logo[]
+}
+
+const educationData: Education[] = [
     {
         name: 'Sunway University & Lancaster University',
         programme: 'Bachelor of Science (Honours) in Computer Science',

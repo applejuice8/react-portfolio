@@ -1,4 +1,11 @@
-function CertItem({ name, issuer, image, onClick }) {
+interface CertItemProps {
+    name: string
+    issuer: string
+    image: string
+    onClick: () => void
+}
+
+function CertItem({ name, issuer, image, onClick }: CertItemProps) {
     return(
         <article className="cert pointer" onClick={onClick}>
             <img className="cert-image" src={`/images/certs/${image}`} alt={name} />

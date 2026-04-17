@@ -1,0 +1,1 @@
+declare module '*.css';     // Remove red underline on css imports

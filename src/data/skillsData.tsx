@@ -1,4 +1,15 @@
-const skillsData = [
+interface SkillItem {
+    name: string
+    icon: string
+}
+
+interface SkillCategory {
+    title: string
+    iconClass: string
+    skills: SkillItem[]
+}
+
+const skillsData: SkillCategory[] = [
     {
         title: 'Frontend',
         iconClass: 'desktop',

@@ -1,6 +1,14 @@
+import { PropsWithChildren } from 'react'
 import './NiceButton.css'
 
-function NiceButton({ link, isCenter, onClick, text, children }) {
+type NiceButtonProps = {
+    link?: string
+    isCenter: boolean
+    onClick?: () => void
+    text?: string
+}
+
+function NiceButton({ link, isCenter, onClick, text, children }: PropsWithChildren<NiceButtonProps>) {
     return(
         <a href={link} 
         target="_blank" 

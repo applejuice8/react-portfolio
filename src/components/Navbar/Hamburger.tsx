@@ -1,6 +1,11 @@
 import './Hamburger.css'
 
-function Hamburger({ isExpanded, onClick }) {
+interface HamburgerProps {
+    isExpanded: boolean
+    onClick: () => void
+}
+
+function Hamburger({ isExpanded, onClick }: HamburgerProps) {
     return(
         <div id="hamburger" 
         className={`pointer ${isExpanded ? 'active' : ''}`} 

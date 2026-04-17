@@ -1,6 +1,20 @@
 import { useTheme } from '../../context/ThemeContext'
 
-function EducationItem({ name, programme, grade, year, logos }) {
+interface Logo {
+    name: string
+    light: string
+    dark: string
+}
+
+interface EducationItemProps {
+    name: string
+    programme: string
+    grade: string
+    year: string
+    logos: Logo[]
+}
+
+function EducationItem({ name, programme, grade, year, logos }: EducationItemProps) {
     const { isLight } = useTheme()
 
     return (

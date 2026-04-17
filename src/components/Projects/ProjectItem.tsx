@@ -1,6 +1,14 @@
 import NiceButton from '../NiceButton/NiceButton'
 
-function ProjectItem({ name, description, tags, image, link }) {
+interface ProjectItemProps {
+    name: string
+    description: string
+    tags: string[]
+    image: string
+    link: string
+}
+
+function ProjectItem({ name, description, tags, image, link }: ProjectItemProps) {
     return(
         <article className="project">
             <div className="project-image-container">

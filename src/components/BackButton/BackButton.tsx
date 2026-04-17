@@ -1,8 +1,12 @@
-import { useNavigate } from 'react-router-dom'
+import { NavigateFunction, useNavigate } from 'react-router-dom'
 import './BackButton.css'
 
-function BackButton({ section }) {
-    const navigate = useNavigate()
+interface BackButtonProps {
+    section: string
+}
+
+function BackButton({ section }: BackButtonProps) {
+    const navigate: NavigateFunction = useNavigate()
 
     // Send router state to home
     function returnToSection() {

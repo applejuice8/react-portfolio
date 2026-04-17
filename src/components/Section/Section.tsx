@@ -1,6 +1,11 @@
+import { PropsWithChildren } from 'react'
 import './Section.css'
 
-function Section({ children, id }) {
+interface SectionProps {
+    id: string
+}
+
+function Section({ children, id }: PropsWithChildren<SectionProps>) {
     return(
         <section id={id}>
             <h2 className="section-title">

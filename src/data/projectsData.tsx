@@ -1,4 +1,13 @@
-const projectsData = [
+interface Project {
+    name: string
+    description: string
+    tags: string[]
+    image: string
+    link: string
+    featured: boolean
+}
+
+const projectsData: Project[] = [
     {
         name: 'Course Enrollment API',
         description: 'A structured and scalable REST API built with FastAPI, SQLAlchemy and SQLite for managing courses, students and enrollments.',

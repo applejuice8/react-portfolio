@@ -1,4 +1,10 @@
-const socialData = [
+interface SocialLink {
+    name: string
+    iconClass: string
+    link: string
+}
+
+const socialData: SocialLink[] = [
     {
         name: 'GitHub',
         iconClass: 'fa-brands fa-github',

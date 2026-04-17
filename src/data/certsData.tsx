@@ -1,4 +1,11 @@
-const certData = [
+interface Cert {
+    name: string
+    issuer: string
+    image: string
+    featured: boolean
+}
+
+const certData: Cert[] = [
     {
         name: 'CS50x: Introduction to Computer Science',
         issuer: 'Harvard University',

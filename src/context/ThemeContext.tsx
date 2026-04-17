@@ -1,8 +1,8 @@
-import { createContext, useContext, useState } from 'react'
+import { PropsWithChildren, createContext, useContext, useState } from 'react'
 
 const ThemeContext = createContext()
 
-export function ThemeProvider({ children }) {
+export function ThemeProvider({ children }: PropsWithChildren) {
     const [isLight, setIsLight] = useState(false)
 
     function toggleTheme() {

@@ -1,12 +1,16 @@
-import { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import './Indicator.css'
 
-function Indicator({ indicator }) {
-    const indicatorRef = useRef(null)
+interface IndicatorProps {
+    indicator: string
+}
+
+function Indicator({ indicator }: IndicatorProps) {
+    const indicatorRef = useRef<HTMLDivElement>(null)
 
     // Update indicator every time hook change
     useEffect(() => {
-        const activeElement = document.querySelector(`.nav-link[href="#${indicator}"]`)
+        const activeElement = document.querySelector<HTMLElement>(`.nav-link[href="#${indicator}"]`)
         if (!activeElement || !indicatorRef.current) return
 
         // Change size, location depending on active section
