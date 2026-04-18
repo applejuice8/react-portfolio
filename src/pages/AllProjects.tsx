@@ -7,7 +7,7 @@ import './All.css'
 function AllProjects() {
     return (
         <>
-            <div class="all-container limit-width">
+            <div className="all-container limit-width">
                 <BackButton section="projects" />
 
                 <h2 className="section-title">All Projects</h2>

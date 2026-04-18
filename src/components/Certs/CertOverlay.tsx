@@ -1,5 +1,11 @@
+import { Cert } from '../../types'
 
-function CertOverlay({ overlay, closeOverlay }) {
+interface CertOverlayProps {
+    overlay: Cert | null
+    closeOverlay: () => void
+}
+
+function CertOverlay({ overlay, closeOverlay }: CertOverlayProps) {
     if (!overlay) return
 
     return(

@@ -1,9 +1,10 @@
 import { useState } from 'react'
+import type { Cert } from '../types'
 
 function useOverlay() {
-    const [overlay, setOverlay] = useState(null)
+    const [overlay, setOverlay] = useState<Cert | null>(null)
 
-    function openOverlay(cert) {
+    function openOverlay(cert: Cert) {
         setOverlay(cert)
         document.body.style.overflow = 'hidden'
     }

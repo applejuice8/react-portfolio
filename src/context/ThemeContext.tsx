@@ -1,6 +1,11 @@
 import { PropsWithChildren, createContext, useContext, useState } from 'react'
 
-const ThemeContext = createContext()
+interface ThemeContextType {
+    isLight: boolean
+    toggleTheme: () => void
+}
+
+const ThemeContext = createContext<ThemeContextType | null>(null)
 
 export function ThemeProvider({ children }: PropsWithChildren) {
     const [isLight, setIsLight] = useState(false)
@@ -18,5 +23,7 @@ export function ThemeProvider({ children }: PropsWithChildren) {
 }
 
 export function useTheme() {
-    return useContext(ThemeContext)
+    const context = useContext(ThemeContext)
+    if (!context) throw new Error('useTheme must be used inside ThemeProvider')
+    return context
 }

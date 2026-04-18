@@ -11,7 +11,7 @@ function AllCerts() {
 
     return (
         <>
-            <div class="all-container">
+            <div className="all-container">
                 <BackButton section="certs" />
 
                 <h2 className="section-title">All Certs</h2>

@@ -1,14 +1,7 @@
 import NiceButton from '../NiceButton/NiceButton'
+import type { Project } from '../../types'
 
-interface ProjectItemProps {
-    name: string
-    description: string
-    tags: string[]
-    image: string
-    link: string
-}
-
-function ProjectItem({ name, description, tags, image, link }: ProjectItemProps) {
+function ProjectItem({ name, description, tags, image, link }: Project) {
     return(
         <article className="project">
             <div className="project-image-container">

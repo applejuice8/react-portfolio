@@ -1,7 +1,6 @@
-interface CertItemProps {
-    name: string
-    issuer: string
-    image: string
+import type { Cert } from '../../types'
+
+interface CertItemProps extends Cert {
     onClick: () => void
 }
 
