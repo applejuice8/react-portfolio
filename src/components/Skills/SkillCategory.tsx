@@ -1,12 +1,7 @@
-import SkillItem, { SkillItemProps } from './SkillItem'
+import SkillItem from './SkillItem'
+import type { SkillCategory } from '../../types'
 
-interface SkillCategoryProps {
-    title: string
-    iconClass: string
-    skills: SkillItemProps[]
-}
-
-function SkillCategory({ title, iconClass, skills }: SkillCategoryProps) {
+function SkillCategory({ title, iconClass, skills }: SkillCategory) {
     return (
         <div className="skills-category">
             <h3 className="category-title">

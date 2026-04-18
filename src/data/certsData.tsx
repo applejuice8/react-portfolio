@@ -1,9 +1,4 @@
-interface Cert {
-    name: string
-    issuer: string
-    image: string
-    featured: boolean
-}
+import { Cert } from '../types'
 
 const certData: Cert[] = [
     {

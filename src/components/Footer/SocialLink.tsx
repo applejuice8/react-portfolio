@@ -1,10 +1,6 @@
-interface SocialLinkProps {
-    name: string
-    iconClass: string
-    link: string
-}
+import type { SocialLink } from '../../types'
 
-function SocialLink({ name, iconClass, link }: SocialLinkProps) {
+function SocialLink({ name, iconClass, link }: SocialLink) {
     return(
         <a href={link} target="_blank" className="social-icon pointer">
             <i className={iconClass}></i>

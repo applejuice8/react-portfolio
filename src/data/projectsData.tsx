@@ -1,11 +1,4 @@
-interface Project {
-    name: string
-    description: string
-    tags: string[]
-    image: string
-    link: string
-    featured: boolean
-}
+import { Project } from '../types'
 
 const projectsData: Project[] = [
     {

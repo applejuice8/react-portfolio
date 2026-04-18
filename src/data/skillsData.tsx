@@ -1,13 +1,4 @@
-interface SkillItem {
-    name: string
-    icon: string
-}
-
-interface SkillCategory {
-    title: string
-    iconClass: string
-    skills: SkillItem[]
-}
+import { SkillCategory } from '../types'
 
 const skillsData: SkillCategory[] = [
     {

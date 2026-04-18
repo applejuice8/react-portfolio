@@ -1,8 +1,4 @@
-interface SocialLink {
-    name: string
-    iconClass: string
-    link: string
-}
+import { SocialLink } from '../types'
 
 const socialData: SocialLink[] = [
     {

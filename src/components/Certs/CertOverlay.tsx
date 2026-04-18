@@ -1,4 +1,4 @@
-import { Cert } from '../../types'
+import type { Cert } from '../../types'
 
 interface CertOverlayProps {
     overlay: Cert | null

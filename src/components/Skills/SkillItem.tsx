@@ -1,9 +1,6 @@
-export interface SkillItemProps {
-    name: string
-    icon: string
-}
+import type { Skill } from '../../types'
 
-function SkillItem({ name, icon }: SkillItemProps) {
+function SkillItem({ name, icon }: Skill) {
     return(
         <li className="skill-item">
             <img src={`/images/skills/${icon}`} alt={name} className="skill-icon" />
