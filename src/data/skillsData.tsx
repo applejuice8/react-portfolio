@@ -19,6 +19,7 @@ const skillsData: SkillCategory[] = [
             { name: 'Django', icon: 'django.svg' },
             { name: 'FastAPI', icon: 'fastapi.svg' },
             { name: 'Flask', icon: 'flask.svg' },
+            { name: 'Go', icon: 'go.svg' },
             { name: 'Redis', icon: 'redis.svg' },
             { name: 'SQLAlchemy', icon: 'sqlalchemy.png' },
         ],
