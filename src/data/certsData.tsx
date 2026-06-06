@@ -14,10 +14,16 @@ const certData: Cert[] = [
         featured: true,
     },
     {
+        name: 'AWS Artificial Intelligence Practitioner Learning Plan',
+        issuer: 'Amazon Web Services (AWS)',
+        image: 'aws-artificial-intelligence-practitioner.png',
+        featured: true,
+    },
+    {
         name: 'Build with AI 2026 x IWD: Gemini CLI Hackathon ONLINE',
         issuer: 'GDG Ahlen',
         image: 'build-with-ai-2026.png',
-        featured: true,
+        featured: false,
     },
     {
         name: 'KitaHack 2026',
