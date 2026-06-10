@@ -20,6 +20,12 @@ const certData: Cert[] = [
         featured: true,
     },
     {
+        name: 'Mastering Docker: Containers, Networking, and Orchestration',
+        issuer: 'CodeSignal',
+        image: 'mastering-docker.png',
+        featured: true,
+    },
+    {
         name: 'Build with AI 2026 x IWD: Gemini CLI Hackathon ONLINE',
         issuer: 'GDG Ahlen',
         image: 'build-with-ai-2026.png',
