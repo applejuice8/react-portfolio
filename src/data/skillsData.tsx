@@ -16,11 +16,10 @@ const skillsData: SkillCategory[] = [
         title: 'Backend & Database',
         iconClass: 'server',
         skills: [
-            { name: 'Django', icon: 'django.svg' },
             { name: 'FastAPI', icon: 'fastapi.svg' },
+            { name: 'Django', icon: 'django.svg' },
             { name: 'Flask', icon: 'flask.svg' },
             { name: 'Go', icon: 'go.svg' },
-            { name: 'Gin', icon: 'gin.png' },
             { name: 'Supabase', icon: 'supabase.png' },
             { name: 'Redis', icon: 'redis.svg' },
             { name: 'SQLAlchemy', icon: 'sqlalchemy.png' },
@@ -30,7 +29,6 @@ const skillsData: SkillCategory[] = [
         title: 'Machine Learning & Data Science',
         iconClass: 'robot',
         skills: [
-            { name: 'PyTorch', icon: 'pytorch.svg' },
             { name: 'Scikit-learn', icon: 'scikit-learn.svg' },
             { name: 'Pandas', icon: 'pandas.svg' },
             { name: 'Jupyter', icon: 'jupyter.svg' },
