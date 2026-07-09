@@ -1,6 +1,4 @@
 #nav-indicator {
-    left: 24px;
-    width: 73.35px;
     position: absolute;
     height: 35px;
     background: var(--nav-indicator);
