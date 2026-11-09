@@ -1,26 +1,19 @@
-import { useNavigate } from 'react-router-dom'
 import useOverlay from '../../hooks/useOverlay'
 import CertItem from './CertItem'
 import CertOverlay from './CertOverlay'
-import certData from '../../data/certsData'
-import NiceButton from '../NiceButton/NiceButton'
+import { certsData } from '../../data'
 import './Certs.css'
 
-const featured = certData.filter(c => c.featured)
-
 function Certs() {
-    const navigate = useNavigate()
     const { overlay, openOverlay, closeOverlay } = useOverlay()
 
     return(
         <>
-            <div id="certs-container">
-                {featured.map((item, index) => (
-                    <CertItem key={index} onClick={() => openOverlay(item)} {...item} />
+            <ul id="certs-container">
+                {certsData.map((cert) => (
+                    <CertItem key={cert.name} onClick={() => openOverlay(cert)} {...cert} />
                 ))}
-            </div>
-
-            <NiceButton text="View All Certificates" isCenter={true} onClick={() => navigate('/certs')} />
+            </ul>
 
             <CertOverlay overlay={overlay} closeOverlay={closeOverlay} />
         </>

@@ -1,57 +1,67 @@
 /* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 
-#certs {
-    max-width: 1500px;
-}
-
 #certs-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-    margin-bottom: 3vh;
+    display: grid;
+    gap: 2.5rem 2rem;
+    width: 100%;
+    max-width: 1024px;
+    list-style: none;
 }
 
 .cert {
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    width: 350px;
-    background-color: var(--bg-secondary);
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
-    position: relative;
 }
 
-.cert:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 10px 26px var(--highlight);
+/* Bare picture that lifts and glows on hover */
+.cert-button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    background: none;
+    border: 0;
+    border-radius: 0.75rem;
+    cursor: zoom-in;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--highlight);
 }
 
 .cert-image {
-    border-radius: 8px;
-    height: 250px;
-    width: auto;
-}
-
-.cert-details {
-    padding: 15px;
-    margin-top: auto;
-    margin-bottom: auto;
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 0.75rem;
 }
 
 .cert-name {
-    font-size: 1.1rem;
-    margin-bottom: 5px;
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.375;
     color: var(--text-primary);
 }
 
 .cert-issuer {
-    font-size: 0.9rem;
-    color: var(--text-accent);
+    margin-top: 0.25rem;
     font-family: 'Merienda', cursive;
+    font-size: 0.875rem;
+    color: var(--text-accent);
+}
+
+@media (min-width: 640px) {
+    #certs-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    #certs-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* Fullscreen overlay */
@@ -66,6 +76,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    cursor: zoom-out;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
