@@ -79,7 +79,7 @@ export interface Club {
 
 export interface Skill {
     name: string
-    /** CSS class string for the icon (devicon or Font Awesome). */
+    /** File name in images/skills (svg or png). A missing file shows a placeholder. */
     icon: string
 }
 
