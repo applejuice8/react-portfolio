@@ -5,6 +5,22 @@ export interface DateRange {
     note?: string // e.g. "Expected: August 2027"
 }
 
+// Profile
+export interface Profile {
+    name: string
+    title: string
+    tagline: string
+    location: string
+    availability?: string
+    about: string[] // paragraphs
+    /** Phrases highlighted in the about text (first occurrence per paragraph). */
+    highlights: string[]
+    image: string // file in /public/images
+    /** The same picture with the background removed (transparent PNG). */
+    imageCutout: string // file in /public/images
+    resumeUrl: string
+}
+
 // Education
 interface Logo {
     name: string
