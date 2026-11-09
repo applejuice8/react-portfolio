@@ -7,6 +7,7 @@ import Section from './components/Section/Section'
 import Home from './components/Home/Home'
 import About from './components/About/About'
 import Education from './components/Education/Education'
+import Experience from './components/Experience/Experience'
 import Skills from './components/Skills/Skills'
 import Projects from './components/Projects/Projects'
 import Certs from './components/Certs/Certs'
@@ -17,6 +18,7 @@ import './App.css'
 const sections = [
     { Component: About, id: 'about' },
     { Component: Education, id: 'education' },
+    { Component: Experience, id: 'experience' },
     { Component: Skills, id: 'skills' },
     { Component: Projects, id: 'projects' },
     { Component: Certs, id: 'certs' },
