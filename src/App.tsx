@@ -13,7 +13,6 @@ import Skills from './components/Skills/Skills'
 import Projects from './components/Projects/Projects'
 import Certs from './components/Certs/Certs'
 import AllCerts from './pages/AllCerts'
-import AllProjects from './pages/AllProjects'
 import './App.css'
 
 const sections = [
@@ -68,7 +67,6 @@ function App() {
                 <Routes>
                     <Route path="/" element={<MainPage />} />
                     <Route path="/certs" element={<AllCerts />} />
-                    <Route path="/projects" element={<AllProjects />} />
                 </Routes>
             <Analytics />
             </BrowserRouter>

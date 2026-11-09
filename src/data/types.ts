@@ -91,9 +91,12 @@ export interface SkillCategory {
 
 export interface Project {
     name: string
+    /** The bullet points, worded as on the resume. */
+    points: string[]
+    /** The points joined into one paragraph, for designs that show text instead of a list. Filled in by projectsData. */
     description: string
     tags: string[]
-    image: string
+    image?: string
     link: string
     featured: boolean
 }
