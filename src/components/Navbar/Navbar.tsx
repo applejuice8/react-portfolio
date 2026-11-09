@@ -4,7 +4,7 @@ import Indicator from './Indicator'
 import Hamburger from './Hamburger'
 import './Navbar.css'
 
-const navLinks: string[] = ['home', 'about', 'education', 'experience', 'clubs', 'skills', 'projects', 'certs']
+const navLinks: string[] = ['home', 'about', 'education', 'experience', 'clubs', 'skills', 'projects', 'hackathons', 'certs']
 
 function Navbar() {
     const [isExpanded, setIsExpanded] = useState(false)

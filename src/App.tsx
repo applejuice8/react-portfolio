@@ -8,6 +8,7 @@ import Home from './components/Home/Home'
 import About from './components/About/About'
 import Education from './components/Education/Education'
 import Clubs from './components/Clubs/Clubs'
+import Hackathons from './components/Hackathons/Hackathons'
 import Experience from './components/Experience/Experience'
 import Skills from './components/Skills/Skills'
 import Projects from './components/Projects/Projects'
@@ -22,6 +23,7 @@ const sections = [
     { Component: Clubs, id: 'clubs' },
     { Component: Skills, id: 'skills' },
     { Component: Projects, id: 'projects' },
+    { Component: Hackathons, id: 'hackathons', title: 'Hackathons & CTFs' },
     { Component: Certs, id: 'certs' },
 ]
 
@@ -38,8 +40,8 @@ function MainPage() {
     return (
         <Layout>
             <Home />
-            {sections.map(({ Component, id }) => (
-                <Section key={id} id={id}>
+            {sections.map(({ Component, id, title }) => (
+                <Section key={id} id={id} title={title}>
                     <Component />
                 </Section>
             ))}
