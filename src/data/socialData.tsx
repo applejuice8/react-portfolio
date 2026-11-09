@@ -1,4 +1,4 @@
-import { SocialLink } from '../types'
+import { SocialLink } from './types'
 
 const socialData: SocialLink[] = [
     {
@@ -8,7 +8,7 @@ const socialData: SocialLink[] = [
     },
     {
         name: 'LinkedIn',
-        iconClass: 'fab fa-linkedin',
+        iconClass: 'fa-brands fa-linkedin',
         link: 'https://www.linkedin.com/in/colin-leong-ba0a8233b/',
     },
     {
@@ -18,8 +18,8 @@ const socialData: SocialLink[] = [
     },
     {
         name: 'Email',
-        iconClass: 'fas fa-envelope',
-        link: 'mailto:23075450@imail.sunway.edu.my',
+        iconClass: 'fa-solid fa-envelope',
+        link: 'mailto:colinleonghongseng@gmail.com',
     },
 ]
 
