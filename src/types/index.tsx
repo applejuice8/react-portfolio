@@ -1,3 +1,10 @@
+// Shared
+export interface DateRange {
+    start: string // e.g. "September 2024"
+    end: string // e.g. "Present"
+    note?: string // e.g. "Expected: August 2027"
+}
+
 // Education
 interface Logo {
     name: string
@@ -8,8 +15,9 @@ interface Logo {
 export interface Education {
     name: string
     programme: string
+    gradeLabel: 'CGPA' | 'SPM'
     grade: string
-    year: string
+    period: DateRange
     logos: Logo[]
 }
 

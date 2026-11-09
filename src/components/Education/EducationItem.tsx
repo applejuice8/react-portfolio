@@ -1,16 +1,13 @@
 import { useTheme } from '../../context/ThemeContext'
-import type { Education } from '../../types'
+import type { DateRange, Education } from '../../types'
 
 /** "September 2024" -> "2024" */
-const yearOf = (value: string) => value.split(' ').pop() ?? value
+const yearOf = (value: string) => value.split(' ')[1] ?? value
 
-/** "September 2024 - Current" -> "2024 – Now", "September 2023 - September 2024" -> "2023 – 2024" */
-function yearSpan(year: string) {
-    const [start, end = ''] = year.split(' - ')
-    return `${yearOf(start)} – ${/^(current|present)$/i.test(end.trim()) ? 'Now' : yearOf(end)}`
-}
+/** "2024 – Now" or "2023 – 2024" */
+const yearSpan = ({ start, end }: DateRange) => `${yearOf(start)} – ${end === 'Present' ? 'Now' : yearOf(end)}`
 
-function EducationItem({ name, programme, grade, year, logos }: Education) {
+function EducationItem({ name, programme, gradeLabel, grade, period, logos }: Education) {
     const { isLight } = useTheme()
 
     return (
@@ -26,10 +23,10 @@ function EducationItem({ name, programme, grade, year, logos }: Education) {
             </div>
 
             <div className="education-details">
-                <p className="year">{yearSpan(year)}</p>
+                <p className="year">{yearSpan(period)}</p>
                 <h3 className="programme">{programme}</h3>
                 <p className="school-name">{name}</p>
-                <p className="grade">{grade.replace(': ', ' ')}</p>
+                <p className="grade">{gradeLabel} {grade}</p>
             </div>
         </li>
     )
