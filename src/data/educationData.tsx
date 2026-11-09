@@ -4,7 +4,7 @@ const educationData: Education[] = [
     {
         name: 'Sunway University & Lancaster University',
         programme: 'Bachelor of Science (Honours) in Computer Science',
-        grade: 'CGPA: 4.0',
+        grade: 'CGPA: 3.98',
         year: 'September 2024 - Current',
         logos: [
             {

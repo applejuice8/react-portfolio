@@ -12,6 +12,7 @@
     --border-color: #444c56;
     --highlight: #539bf5;
     --nav-indicator: rgba(108, 182, 255, 0.3);
+    --green: #57ab5a;
 }
 
 /* Light theme */
@@ -25,6 +26,7 @@
     --border-color: #7a9ab8;
     --highlight: #1d3fa0;
     --nav-indicator: rgba(29, 63, 160, 0.3);
+    --green: #1e6b2c;
 }
 
 /* General */

@@ -4,11 +4,11 @@ import './Education.css'
 
 function Education() {
     return(
-        <div id="education-container">
+        <ol id="education-list">
             {educationData.map((item, index) => (
                 <EducationItem key={index} {...item} />
             ))}
-        </div>
+        </ol>
     )
 }
 
