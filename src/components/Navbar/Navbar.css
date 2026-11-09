@@ -39,7 +39,7 @@
 }
 
 /* Mobile (Top navbar -> Collapsible hamburger) */
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     #navbar {
         flex-direction: row;
         padding: 0.2rem 1.2rem;
