@@ -4,12 +4,10 @@ function About() {
     return(
         <>
             <div id="about-content">
-                <p>Hello! I'm <span className="highlight">Colin Leong</span>, a Year 2 <span className="highlight">Computer Science (Hons)</span> student at <span className="highlight">Sunway University</span>.</p>
-                <p>I'm a <span className="highlight">backend-focused developer</span> with a strong foundation in <span className="highlight">machine learning</span> and <span className="highlight">web scraping</span>. I have a strong interest in <span className="highlight">system design</span> and building <span className="highlight">scalable systems</span> that turn data into real-world applications.</p>
-                <p>I enjoy thinking about how different components work together to form reliable and maintainable architectures. I have built <span className="highlight">RESTful APIs</span> using <span className="highlight">FastAPI</span> and <span className="highlight">Flask</span>, structured with clean separation of concerns.</p>
-                <p>On the data side, I have experience building <span className="highlight">end-to-end pipelines</span> from preprocessing to model evaluation. I'm comfortable developing <span className="highlight">predictive models</span> for classNameification, regression and clustering tasks.</p>
-                <p>I also have practical experience in <span className="highlight">web scraping</span>, combining <span className="highlight">browser automation</span> with efficient parsing to build scalable <span className="highlight">data extraction</span> tools. Through freelance gigs on Upwork, I've assisted clients extract and structure data into clean, reusable CSV datasets.</p>
-                <p>Currently seeking <span className="highlight">backend engineering opportunities</span> where I can contribute to robust systems while continuing to deepen my skills in data-driven applications.</p>
+                <p>I approach technology as a systems problem: understanding individual components, and how they interact with each other.</p>
+                <p>I enjoy participating in <span className="highlight">hackathons</span> and <span className="highlight">CTFs</span>. Hackathons push me to think beyond the code and consider the business problem I'm actually addressing, while CTFs push me to develop a security-first mindset around identifying and mitigating system vulnerabilities.</p>
+                <p>I'm active across various <span className="highlight">tech clubs</span> in my university, frequently organizing and participating in events. I also stay close to the broader tech community, occasionally attending meetups such as Codex, AWS, and Kubernetes events. I enjoy being around people of similar interests.</p>
+                <p>Recently, I've been exploring <span className="highlight">Cloud technologies (AWS)</span>, <span className="highlight">Web3</span> and <span className="highlight">Go</span>.</p>
             </div>
         </>
     )
