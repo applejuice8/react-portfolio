@@ -32,6 +32,10 @@
     object-fit: contain;
 }
 
+.education-details {
+    text-align: center;
+}
+
 .year {
     font-size: 0.875rem;
     font-weight: 600;
@@ -78,5 +82,9 @@
         flex-shrink: 0;
         width: 18rem;
         transform: translateX(1rem);
+    }
+
+    .education-details {
+        text-align: left;
     }
 }

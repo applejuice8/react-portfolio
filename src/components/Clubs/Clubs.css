@@ -24,11 +24,13 @@
     flex-shrink: 0;
     width: 10rem;
     height: 7rem;
-    object-position: left;
+    justify-self: center;
+    object-position: center;
 }
 
 .club-body {
     min-width: 0;
+    text-align: center;
 }
 
 .club-name {
@@ -44,8 +46,6 @@
     flex-direction: column;
     gap: 1rem;
     margin-top: 1rem;
-    padding-left: 1.25rem;
-    border-left: 4px solid color-mix(in srgb, var(--text-accent) 60%, transparent);
 }
 
 .club-role {
@@ -65,7 +65,16 @@
     }
 
     .club-logo {
-        object-position: center;
+        justify-self: stretch;
+    }
+
+    .club-body {
+        text-align: left;
+    }
+
+    .club-positions {
+        padding-left: 1.25rem;
+        border-left: 4px solid color-mix(in srgb, var(--text-accent) 60%, transparent);
     }
 
     .club-name {
