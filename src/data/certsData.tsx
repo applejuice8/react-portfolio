@@ -1,4 +1,4 @@
-import { Cert } from '../types'
+import { Cert } from './types'
 
 const certData: Cert[] = [
     {

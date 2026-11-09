@@ -1,0 +1,17 @@
+.img-cover {
+    object-fit: cover;
+}
+
+.img-contain {
+    object-fit: contain;
+}
+
+.img-placeholder {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, var(--bg-accent), var(--bg-secondary));
+    color: var(--text-secondary);
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}

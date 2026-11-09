@@ -1,4 +1,5 @@
 import profileData from '../../data/profileData'
+import { getImage } from '../../lib/assets'
 import socialData from '../../data/socialData'
 import './Home.css'
 
@@ -29,7 +30,7 @@ function Home() {
                 </div>
             </div>
             <div id="profile-container">
-                <img src={`/images/${profileData.image}`} alt={profileData.name} id="profile-image" />
+                <img src={getImage('', profileData.image)} alt={profileData.name} id="profile-image" />
             </div>
         </section>
     )

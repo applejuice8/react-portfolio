@@ -1,4 +1,4 @@
-import { Profile } from '../types'
+import { Profile } from './types'
 
 const profileData: Profile = {
     name: 'Colin Leong Hong Seng',

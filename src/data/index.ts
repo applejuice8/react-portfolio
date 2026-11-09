@@ -1,0 +1,8 @@
+/** Single entry point for all portfolio content: `import { profileData } from '../../data'` */
+export { default as profileData } from './profileData'
+export { default as educationData } from './educationData'
+export { default as skillsData } from './skillsData'
+export { default as projectsData } from './projectsData'
+export { default as certsData } from './certsData'
+export { default as socialData } from './socialData'
+export * from './types'

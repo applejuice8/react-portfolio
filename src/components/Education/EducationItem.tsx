@@ -1,5 +1,7 @@
 import { useTheme } from '../../context/ThemeContext'
-import type { DateRange, Education } from '../../types'
+import { getImage } from '../../lib/assets'
+import { logoFile } from '../../lib/logos'
+import type { DateRange, Education } from '../../data/types'
 
 /** "September 2024" -> "2024" */
 const yearOf = (value: string) => value.split(' ')[1] ?? value
@@ -15,7 +17,7 @@ function EducationItem({ name, programme, gradeLabel, grade, period, logos }: Ed
             <div className="logo-container">
                 {logos.map((item, index) => (
                     <img key={index}
-                    src={`/images/education/${isLight ? item.light : item.dark}`}
+                    src={getImage('education', logoFile(item, isLight))}
                     alt={item.name}
                     className="school-logo"
                     />
