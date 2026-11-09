@@ -1,7 +1,7 @@
 /**
  * Resolves image file names stored in the data files to bundled URLs.
- * Images live in src/data/images/<folder>/<file>. Vite fingerprints each file (cache-friendly) and
- * only bundles what is listed here, so unused images never reach the build.
+ * Images live in src/data/images/<folder>/<file>. Vite fingerprints each file (cache-friendly).
+ * Every file in the folder is bundled, so delete images the data no longer uses.
  */
 const modules = import.meta.glob('../data/images/**/*.{png,jpg,jpeg,svg,webp}', {
     eager: true,
