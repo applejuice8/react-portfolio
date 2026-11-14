@@ -53,21 +53,27 @@ const skillsData: SkillCategory[] = [
         ],
     },
     {
-        title: 'Others',
-        iconClass: 'fa-solid fa-screwdriver-wrench',
+        title: 'DevOps',
+        iconClass: 'fa-solid fa-infinity',
         skills: [
             { name: 'Git', icon: 'git.svg' },
             { name: 'GitHub', icon: 'github.svg' },
             { name: 'AWS', icon: 'aws.svg' },
-            { name: 'Java', icon: 'java.svg' },
             { name: 'Docker', icon: 'docker.svg' },
             { name: 'Linux', icon: 'linux.svg' },
-            { name: 'Scala', icon: 'scala.svg' },
-            { name: 'Haskell', icon: 'haskell.svg' },
-            { name: 'C', icon: 'c.svg' },
             { name: 'GitHub Actions', icon: 'github-actions.svg' },
             { name: 'Prometheus', icon: 'prometheus.svg' },
             { name: 'Grafana', icon: 'grafana.svg' },
+        ],
+    },
+    {
+        title: 'Others',
+        iconClass: 'fa-solid fa-screwdriver-wrench',
+        skills: [
+            { name: 'Java', icon: 'java.svg' },
+            { name: 'Scala', icon: 'scala.svg' },
+            { name: 'Haskell', icon: 'haskell.svg' },
+            { name: 'C', icon: 'c.svg' },
         ],
     },
 ]
