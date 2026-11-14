@@ -65,7 +65,9 @@ const skillsData: SkillCategory[] = [
             { name: 'Scala', icon: 'scala.svg' },
             { name: 'Haskell', icon: 'haskell.svg' },
             { name: 'C', icon: 'c.svg' },
-            { name: 'GitHub Actions', icon: 'github-actions.svg' }
+            { name: 'GitHub Actions', icon: 'github-actions.svg' },
+            { name: 'Prometheus', icon: 'prometheus.svg' },
+            { name: 'Grafana', icon: 'grafana.svg' },
         ],
     },
 ]
